@@ -1,4 +1,12 @@
 <div>
+    <p>Bienvenidos</p>
+    <h1>Tu perfil (sin datos sensibles)</h1>
+    <p>{{user.name}}</p>
+    <p>{{user.email}}</p>
+    <p>{{user.age}}</p>
+</div>
+
+<div>
     {{#each products}}
 
     <p>{{this.title}}</p>
@@ -21,5 +29,6 @@
     {{#if hasNextPage}}
     <a href="/products?page={{nextPage}}&limit=5"><button>Siguiente</button></a>
     {{/if}}
+        <a href="/api/sessions/logout"><button>Salir</button></a>
 
 </div>
